@@ -60,7 +60,7 @@ fn pass_reset_vertex_buffer() {
                         VertexBufferLayout {
                             array_stride: 4,
                             step_mode: VertexStepMode::Vertex,
-                            attributes: &vertex_attr_array![1 => Float32],
+                            attributes: &vertex_attr_array![5 => Float32],
                         },
                     ],
                 },
