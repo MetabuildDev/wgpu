@@ -670,7 +670,6 @@ impl crate::Device<super::Api> for super::Device {
     ) -> Result<super::Texture, crate::DeviceError> {
         let gl = &self.shared.context.lock();
 
-        log::error!("WGPU_metacad!: {:?}", desc);
         let render_usage = crate::TextureUses::COLOR_TARGET
             | crate::TextureUses::DEPTH_STENCIL_WRITE
             | crate::TextureUses::DEPTH_STENCIL_READ;
